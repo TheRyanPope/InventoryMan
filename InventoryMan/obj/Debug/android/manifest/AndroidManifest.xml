@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="InventoryMan.InventoryMan" android:versionCode="1" android:versionName="1.0">
+  <!--suppress UsesMinSdkAttributes-->
+  <uses-sdk android:minSdkVersion="16" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+  <application android:label="InventoryMan" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="InventoryMan" android:name="md5177a90427061561774773f620b2ea9c6.AddNewActivity" />
+    <activity android:label="InventoryMan" android:name="md5177a90427061561774773f620b2ea9c6.CreateActivity" />
+    <activity android:label="InventoryMan" android:name="md5177a90427061561774773f620b2ea9c6.HomeActivity" />
+    <activity android:label="InventoryMan" android:name="md5177a90427061561774773f620b2ea9c6.ItemDetailsActivity" />
+    <activity android:label="InventoryMan" android:name="md5177a90427061561774773f620b2ea9c6.ItemLogActivity" />
+    <activity android:label="InventoryMan" android:name="md5177a90427061561774773f620b2ea9c6.MainActivity" />
+    <activity android:icon="@drawable/mlogo" android:label="Inventory Man" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="md5177a90427061561774773f620b2ea9c6.SplashScreenActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="InventoryMan.InventoryMan.mono.MonoRuntimeProvider.__mono_init__" />
+    <!--suppress ExportedReceiver-->
+    <receiver android:name="mono.android.Seppuku">
+      <intent-filter>
+        <action android:name="mono.android.intent.action.SEPPUKU" />
+        <category android:name="mono.android.intent.category.SEPPUKU.InventoryMan.InventoryMan" />
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>
